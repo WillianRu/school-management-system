@@ -1,19 +1,39 @@
-package org.example.entity;
+package org.example.service;
+
+import org.example.entity.Course;
+import org.example.entity.Student;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class AcademicManagment {
+public class AcademicManagmentService implements IAcademicService {
     List <Course> courses;
     List <Student> students;
     HashMap <Course, ArrayList<Student>> studentsByCourse;
 
-    public AcademicManagment(List<Course> courses, List<Student> students, HashMap<Course, ArrayList<Student>> studentsByCourse) {
+    public AcademicManagmentService(List<Course> courses, List<Student> students, HashMap<Course, ArrayList<Student>> studentsByCourse) {
         this.courses = courses;
         this.students = students;
         this.studentsByCourse = studentsByCourse;
     }
+
+    public void enrollStudent(Student student) {
+
+    }
+
+    public void addCourse(Course course) {
+
+    }
+
+    public void suscribeStudentCourse(Student student, int idCourse) {
+
+    }
+
+    public void unsuscribeStudentCourse(Student student, int idCourse) {
+
+    }
+
 
     public List<Course> getCourses() {
         return courses;
